@@ -35,7 +35,7 @@ header .icon-cart span {
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: #f7be27;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -74,7 +74,10 @@ header .icon-cart span {
     background-color: #f6f6f6;
     padding: 20px;
     border-radius: 20px;
-
+    transition: .5s;
+    &:hover{
+        background-color: #f7be27;
+    }
 }
 
 .listProduct .item h2 {
@@ -89,7 +92,7 @@ header .icon-cart span {
 }
 
 .listProduct .item button {
-    background-color: #6a0324;
+    background-color: #642F21;
     color: #fff;
     padding: 5px 10px;
     border-radius: 20px;
@@ -127,7 +130,7 @@ body.showCart .container{
 }
 
 .cartTab .btn button {
-    background-color: #5F6D61;
+    background-color: #f7be27;
     color: #fff;
     padding: 10px;
     border: none;
@@ -139,7 +142,7 @@ body.showCart .container{
 }
 
 .cartTab .btn .close {
-    background-color: #6a0324;
+    background-color: #642F21;
 }
 
 .cartTab .listCart .item img {
