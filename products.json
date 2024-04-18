@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "CRISPY CHICKEN",
+        "price": 200,
+        "image": "./images/burger-1.png"
+    },
+    {
+        "id": 2,
+        "name": "ULTIMATE BACON",
+        "price": 350,
+        "image": "./images/burger-2.png"
+    },
+    {
+        "id": 3,
+        "name": "BLACKSHEEP BURGER",
+        "price": 280,
+        "image": "./images/burger-3.png"
+    },
+    {
+        "id": 4,
+        "name": "DOUBLE BURGER",
+        "price": 190,
+        "image": "./images/burger-4.png"
+    },
+    {
+        "id": 5,
+        "name": "TURKEY BURGER",
+        "price": 301,
+        "image": "./images/burger-5.png"
+    },
+    {
+        "id": 6,
+        "name": "SMOKEY HOUSE",
+        "price": 670,
+        "image": "./images/burger-6.png"
+    },
+    {
+        "id": 7,
+        "name": "CLASSIC BURGER",
+        "price": 210,
+        "image": "./images/burger-7.png"
+    },
+    {
+        "id": 8,
+        "name": "VEGAN BURGER",
+        "price": 400,
+        "image": "./images/burger-8.png"
+    }
+]
