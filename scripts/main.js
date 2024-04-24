@@ -172,3 +172,15 @@ const updateCartAndTotal = () => {
 
 // Call initApp to initialize the application
 initApp();
+
+// Dark Mode
+document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.querySelector('input[type="checkbox"]');
+    const body = document.querySelector('body');
+
+  
+    checkbox.addEventListener('change', () => {  
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    });
+});
