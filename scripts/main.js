@@ -184,3 +184,46 @@ document.addEventListener('DOMContentLoaded', () => {
     element.classList.toggle("dark-mode");
     });
 });
+
+
+
+
+
+
+// Add event listener to checkout button
+const checkoutButton = document.querySelector('.checkout');
+checkoutButton.addEventListener('click', () => {
+  const modal = document.getElementById('checkoutModal');
+  modal.style.display = 'block';
+  // Calculate and display total amount
+  const totalAmountElement = document.getElementById('totalAmountCheckout');
+  const totalPrice = calculateTotalPrice(); // You'll need to define this function based on your existing code
+  totalAmountElement.textContent = `$${totalPrice}`;
+});
+
+// Close modal when the close button is clicked
+const closeButton = document.querySelector('.closePop');
+closeButton.addEventListener('click', () => {
+  const modal = document.getElementById('checkoutModal');
+  modal.style.display = 'none';
+});
+
+// Close modal when the user clicks outside of it
+window.addEventListener('click', (event) => {
+  const modal = document.getElementById('checkoutModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+// Submit event listener for the checkout form
+const checkoutForm = document.getElementById('checkoutForm');
+checkoutForm.addEventListener('submit', (event) => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+  // Here you can handle the form submission, e.g., send data to a server
+  // You can access form fields using event.target.name.value, event.target.email.value, etc.
+  // After handling the submission, you may want to close the modal
+  const modal = document.getElementById('checkoutModal');
+  modal.style.display = 'none';
+});
